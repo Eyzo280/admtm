@@ -1,4 +1,6 @@
+import 'package:admtm_app/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,6 +16,32 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      supportedLocales: [
+        Locale('en', 'US'),
+        Locale('pt', 'PT'),
+      ],
+      // These delegates make sure that the localization data for the proper language is loaded
+      localizationsDelegates: [
+        // A class which loads the translations from JSON files
+        AppLocalizations.delegate,
+        // Built-in localization of basic text for Material widgets
+        GlobalMaterialLocalizations.delegate,
+        // Built-in localization for text direction LTR/RTL
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      // Returns a locale which will be used by the app
+      localeResolutionCallback: (locale, supportedLocales) {
+        // Check if the current device locale is supported
+        for (var supportedLocale in supportedLocales) {
+          if (supportedLocale.languageCode == locale.languageCode &&
+              supportedLocale.countryCode == locale.countryCode) {
+            return supportedLocale;
+          }
+        }
+        // If the locale of the device is not supported, use the first one
+        // from the list (English, in this case).
+        return supportedLocales.first;
+      },
       home: MyHomePage(title: 'ADMTM App Home Page'),
     );
   }
@@ -29,38 +57,83 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
+    final _deviceSize = MediaQuery.of(context).size;
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              expandedHeight: 200.0,
+              floating: false,
+              pinned: true,
+              title: Text('ADMTM'),
+              centerTitle: true,
+              leading: IconButton(
+                icon: Icon(Icons.menu),
+                onPressed: () {},
+              ),
+              backgroundColor: Colors.red,
+              flexibleSpace: FlexibleSpaceBar(
+                background: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Image.network(
+                      "http://admtm.com/img/admtm001.jpg",
+                      fit: BoxFit.cover,
+                    ),
+                    Stack(
+                      children: [
+                        Center(
+                          child: Image.network(
+                            "http://admtm.com/img/tlo_dragons.png",
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Associação Desportiva de Muay Thai ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12.0,
+                                ),
+                              ),
+                              Text(
+                                "Da Madeira ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12.0,
+                                ),
+                              ),
+                              SizedBox(
+                                height: _deviceSize.height * 0.01,
+                              ),
+                              Text(
+                                "The Unforgettable Muay Thai experience",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 10.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+          ];
+        },
+        body: Center(
+          child: Text("Sample Text"),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
