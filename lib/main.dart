@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         dividerColor: Color.fromRGBO(0, 0, 0, 0.5),
         textTheme: TextTheme(
           bodyText1: TextStyle(color: Colors.white),
-          bodyText2: TextStyle(color: Color.fromRGBO(255, 255, 255, 0.5)),
+          bodyText2: TextStyle(color: Colors.white),
         ),
       ),
       localizationsDelegates: context.localizationDelegates,
