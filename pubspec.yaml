@@ -52,6 +52,8 @@ flutter:
     - images/admtm001.jpg
     - images/background_dragons.png
     - images/logo_admtm_white.png
+    - images/fpkmt_logo_small.png
+    - images/logo_admtm2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

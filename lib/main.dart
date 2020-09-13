@@ -19,11 +19,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ADMTM App',
       theme: ThemeData(
+        canvasColor: Color.fromRGBO(29, 36, 42, 1),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         dividerColor: Color.fromRGBO(0, 0, 0, 0.5),
         textTheme: TextTheme(
           bodyText1: TextStyle(color: Colors.white),
+          bodyText2: TextStyle(color: Color.fromRGBO(255, 255, 255, 0.5)),
         ),
       ),
       localizationsDelegates: context.localizationDelegates,

@@ -1,5 +1,8 @@
 {
     "title": "ADMTM English",
+    "appbar_value1": "Associação Desportiva de Muay Thai ",
+    "appbar_value2": "Da Madeira ",
+    "appbar_value3": "The Unforgettable Muay Thai experience",
     "menu_value1": "HOME",
     "menu_value2": "ABOUT US",
     "menu_value3": "CLASSES",
@@ -8,5 +11,9 @@
     "menu_value6": "GYMS AND THE SCHEDULE",
     "menu_value7": "NEWS",
     "menu_value8": "SHOP",
-    "menu_value9": "SPONSORS"
+    "menu_value9": "SPONSORS",
+    "HomeOne_value1": "ASSOCIAÇÃO DESPORTIVA DE MUAY THAI DA MADEIRA",
+    "HomeOne_value2": "WELCOMES YOU TO OUR WEBSITE",
+    "HomeOne_value3": "You will find out what Muay Thai is and how it can change your life. Join us and we will take you on a journey you will never forget.",
+    "HomeOne_value4": "We are part of Federação Portuguesa Kickboxing e Muaythai and ADCMAD - Associação Desportos de Combate da Madeira"
 }

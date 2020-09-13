@@ -1,12 +1,19 @@
 {
     "title": "ADMTM Português",
-    "menu_value1": "HOME",
-    "menu_value2": "ABOUT US",
-    "menu_value3": "CLASSES",
-    "menu_value4": "WHAT IS MUAY THAI",
-    "menu_value5": "OUR TEAM",
-    "menu_value6": "GYMS AND THE SCHEDULE",
-    "menu_value7": "NEWS",
-    "menu_value8": "SHOP",
-    "menu_value9": "SPONSORS"
+    "appbar_value1": "Associação Desportiva de Muay Thai ",
+    "appbar_value2": "Da Madeira ",
+    "appbar_value3": "A inesquecível experiência do Muay Thai",
+    "menu_value1": "Página Inicial",
+    "menu_value2": "Sobre Nós",
+    "menu_value3": "Aulas",
+    "menu_value4": "O que é o muay thai",
+    "menu_value5": "A Nossa Equipa",
+    "menu_value6": "Ginásios e Horários",
+    "menu_value7": "Notícias",
+    "menu_value8": "Loja",
+    "menu_value9": "Patrocinadores",
+    "HomeOne_value1": "A ASSOCIAÇÃO DESPORTIVA DE MUAY THAI DA MADEIRA",
+    "HomeOne_value2": "DÁ-LHE AS BOAS VINDAS AO NOSSO SITE",
+    "HomeOne_value3": "Irá descobrir o que é Muay Thai e como este poderá mudar a sua vida. Junte-se a nós e embarcará numa aventura que não irá esquecer.",
+    "HomeOne_value4": "Fazemos parte da Federação Portuguesa de Kickboxing e Muay Thai e da ADCMAD - Associação Desportos de Combate da Madeira"
 }

@@ -1,4 +1,7 @@
+import 'package:admtm_app/widgets/home/appBar.dart';
 import 'package:admtm_app/widgets/home/drawer.dart';
+import 'package:admtm_app/widgets/home/one.dart';
+import 'package:admtm_app/widgets/home/two.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -22,82 +25,25 @@ class _HomeState extends State<Home> {
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return <Widget>[
-            SliverAppBar(
-              expandedHeight: 200.0,
-              floating: false,
-              pinned: true,
-              title: Text('ADMTM'),
-              centerTitle: true,
-              backgroundColor: Colors.transparent,
-              flexibleSpace: Stack(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: ExactAssetImage("images/admtm001.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  FlexibleSpaceBar(
-                    background: Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        Image.asset(
-                          "images/admtm001.jpg",
-                          fit: BoxFit.cover,
-                        ),
-                        Stack(
-                          children: [
-                            Center(
-                              child: Image.asset(
-                                "images/background_dragons.png",
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Center(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Associação Desportiva de Muay Thai ",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.0,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Da Madeira ",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.0,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: _deviceSize.height * 0.01,
-                                  ),
-                                  Text(
-                                    "The Unforgettable Muay Thai experience",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10.0,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            HomeAppBar(
+              deviceSize: _deviceSize,
+            )
           ];
         },
-        body: Center(
-          child: Text("Sample Text"),
+        body: ListView(
+          padding: EdgeInsets.all(0),
+          children: [
+            Container(
+              width: double.infinity,
+              height: _deviceSize.height * 0.6,
+              child: HomeOne(deviceSize: _deviceSize),
+            ),
+            Container(
+              width: double.infinity,
+              height: _deviceSize.height * 0.4,
+              child: HomeTwo(deviceSize: _deviceSize),
+            ),
+          ],
         ),
       ),
     );
