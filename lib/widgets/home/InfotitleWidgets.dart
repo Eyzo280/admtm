@@ -14,40 +14,34 @@ class HomeInfoTitleWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0),
-      child: Column(
-        children: [
-          SizedBox(
-            height: deviceSize.height * 0.05,
-          ),
-          Text(
-            title,
-            style: Theme.of(context)
-                .textTheme
-                .bodyText2
-                .copyWith(fontWeight: FontWeight.bold, fontSize: 25),
-          ).tr(),
-          SizedBox(
-            height: deviceSize.height * 0.05,
-          ),
-          Divider(),
-          SizedBox(
-            height: deviceSize.height * 0.05,
-          ),
-          Text(
-            content,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
-                  color: Color.fromRGBO(255, 190, 190, 1),
-                  fontSize: 20,
-                ),
-          ).tr(),
-          SizedBox(
-            height: deviceSize.height * 0.1,
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        Text(
+          title,
+          style: Theme.of(context)
+              .textTheme
+              .bodyText2
+              .copyWith(fontWeight: FontWeight.bold, fontSize: 25),
+        ).tr(),
+        SizedBox(
+          height: deviceSize.height * 0.05,
+        ),
+        Divider(),
+        SizedBox(
+          height: deviceSize.height * 0.05,
+        ),
+        Text(
+          content,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.bodyText2.copyWith(
+                color: Color.fromRGBO(255, 190, 190, 1),
+                fontSize: 20,
+              ),
+        ).tr(),
+        SizedBox(
+          height: deviceSize.height * 0.1,
+        ),
+      ],
     );
   }
 }

@@ -12,11 +12,8 @@ class HomeOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      width: double.infinity,
-      height: double.infinity,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0),
-        child: Stack(
+      padding: const EdgeInsets.all(24.0),
+      child:Stack(
           alignment: Alignment.center,
           children: [
             Image.asset('images/logo_admtm2.jpg'),
@@ -71,7 +68,7 @@ class HomeOne extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      
     );
   }
 }

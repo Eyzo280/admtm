@@ -37,121 +37,132 @@ class _HomeState extends State<Home> {
             )
           ];
         },
-        body: ListView(
-          padding: EdgeInsets.all(0),
-          children: [
-            Container(
-              width: double.infinity,
-              height: _deviceSize.height * 0.6,
-              child: HomeOne(deviceSize: _deviceSize),
-            ),
-            Container(
-              width: double.infinity,
-              height: _deviceSize.height * 0.8,
-              child: HomeContent(
-                titleTranslate: 'HomeTwo_title',
-                contentTranslate: 'HomeTwo_content',
-                buttonTranslate: 'HomeTwo_button',
-                imageAsset: 'images/aboutus_xlaozc3la0.jpg',
-                deviceSize: _deviceSize,
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeOne(deviceSize: _deviceSize),
               ),
-            ),
-            Container(
-              width: double.infinity,
-              height: _deviceSize.height * 0.8,
-              child: HomeContent(
-                titleTranslate: 'HomeThree_title',
-                contentTranslate: 'HomeThree_content',
-                buttonTranslate: 'HomeThree_button',
-                imageAsset: 'images/admtm_xk35euui0a.jpg',
-                deviceSize: _deviceSize,
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeContent(
+                  titleTranslate: 'HomeTwo_title',
+                  contentTranslate: 'HomeTwo_content',
+                  buttonTranslate: 'HomeTwo_button',
+                  imageAsset: 'images/aboutus_xlaozc3la0.jpg',
+                  deviceSize: _deviceSize,
+                ),
               ),
-            ),
-            Container(
-              width: double.infinity,
-              height: _deviceSize.height * 0.8,
-              child: HomeContent(
-                titleTranslate: 'HomeFour_title',
-                contentTranslate: 'HomeFour_content',
-                buttonTranslate: 'HomeFour_button',
-                imageAsset: 'images/admtm_x234dizoop.jpg',
-                deviceSize: _deviceSize,
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeContent(
+                  titleTranslate: 'HomeThree_title',
+                  contentTranslate: 'HomeThree_content',
+                  buttonTranslate: 'HomeThree_button',
+                  imageAsset: 'images/admtm_xk35euui0a.jpg',
+                  deviceSize: _deviceSize,
+                ),
               ),
-            ),
-            Container(
-              width: double.infinity,
-              height: _deviceSize.height * 0.8,
-              child: HomeContent(
-                titleTranslate: 'HomeFive_title',
-                contentTranslate: 'HomeFive_content',
-                buttonTranslate: 'HomeFive_button',
-                imageAsset: 'images/admtm_team02v2.jpg',
-                deviceSize: _deviceSize,
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeContent(
+                  titleTranslate: 'HomeFour_title',
+                  contentTranslate: 'HomeFour_content',
+                  buttonTranslate: 'HomeFour_button',
+                  imageAsset: 'images/admtm_x234dizoop.jpg',
+                  deviceSize: _deviceSize,
+                ),
               ),
-            ),
-            Container(
-              color: Color.fromRGBO(173, 49, 52, 1),
-              width: double.infinity,
-              height: _deviceSize.height * 2.35,
-              child: Column(
-                children: [
-                  HomeInfoTitleWidgets(
-                    title: 'HomeInfo_title',
-                    content: 'HomeInfo_content',
-                    deviceSize: _deviceSize,
-                  ),
-                  Container(
-                    child: HomeInfo(
-                      title: 'HomeInfo_One_title',
-                      content: 'HomeInfo_One_content',
-                      icon: FontAwesomeIcons.solidCalendarAlt,
-                      deviceSize: _deviceSize,
-                    ),
-                  ),
-                  Container(
-                    child: HomeInfo(
-                      title: 'HomeInfo_Two_title',
-                      content: 'HomeInfo_Two_content',
-                      icon: FontAwesomeIcons.newspaper,
-                      deviceSize: _deviceSize,
-                    ),
-                  ),
-                  Container(
-                    child: HomeInfo(
-                      title: 'HomeInfo_Three_title',
-                      content: 'HomeInfo_Three_content',
-                      icon: FontAwesomeIcons.shoppingCart,
-                      deviceSize: _deviceSize,
-                    ),
-                  ),
-                  Container(
-                    child: HomeInfo(
-                      title: 'HomeInfo_Four_title',
-                      content: 'HomeInfo_Four_content_value1',
-                      icon: FontAwesomeIcons.envelope,
-                      deviceSize: _deviceSize,
-                    ),
-                  ),
-                ],
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeContent(
+                  titleTranslate: 'HomeFive_title',
+                  contentTranslate: 'HomeFive_content',
+                  buttonTranslate: 'HomeFive_button',
+                  imageAsset: 'images/admtm_team02v2.jpg',
+                  deviceSize: _deviceSize,
+                ),
               ),
-            ),
-            HomeSponsors(
-              value1: 'Home_sponsors_value1',
-              value2: 'Home_sponsors_value2',
-              value3: 'Home_sponsors_value3',
-              value4: 'Home_sponsors_value4',
-              deviceSize: _deviceSize,
-            ),
-            HomeFindFacebook(
-              deviceSize: _deviceSize,
-            ),
-            HomePartners(
-              deviceSize: _deviceSize,
-            ),
-            HomeBottom(
-              deviceSize: _deviceSize,
-            ),
-          ],
+              Flexible(
+                fit: FlexFit.loose,
+                child: Container(
+                  color: Color.fromRGBO(173, 49, 52, 1),
+                  padding: EdgeInsets.all(24),
+                  child: Column(
+                    children: [
+                      HomeInfoTitleWidgets(
+                        title: 'HomeInfo_title',
+                        content: 'HomeInfo_content',
+                        deviceSize: _deviceSize,
+                      ),
+                      Container(
+                        child: HomeInfo(
+                          title: 'HomeInfo_One_title',
+                          content: 'HomeInfo_One_content',
+                          icon: FontAwesomeIcons.solidCalendarAlt,
+                          deviceSize: _deviceSize,
+                        ),
+                      ),
+                      Container(
+                        child: HomeInfo(
+                          title: 'HomeInfo_Two_title',
+                          content: 'HomeInfo_Two_content',
+                          icon: FontAwesomeIcons.newspaper,
+                          deviceSize: _deviceSize,
+                        ),
+                      ),
+                      Container(
+                        child: HomeInfo(
+                          title: 'HomeInfo_Three_title',
+                          content: 'HomeInfo_Three_content',
+                          icon: FontAwesomeIcons.shoppingCart,
+                          deviceSize: _deviceSize,
+                        ),
+                      ),
+                      Container(
+                        child: HomeInfo(
+                          title: 'HomeInfo_Four_title',
+                          content: 'HomeInfo_Four_content_value1',
+                          icon: FontAwesomeIcons.envelope,
+                          deviceSize: _deviceSize,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeSponsors(
+                  value1: 'Home_sponsors_value1',
+                  value2: 'Home_sponsors_value2',
+                  value3: 'Home_sponsors_value3',
+                  value4: 'Home_sponsors_value4',
+                  deviceSize: _deviceSize,
+                ),
+              ),
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeFindFacebook(
+                  deviceSize: _deviceSize,
+                ),
+              ),
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomePartners(
+                  deviceSize: _deviceSize,
+                ),
+              ),
+              Flexible(
+                fit: FlexFit.loose,
+                child: HomeBottom(
+                  deviceSize: _deviceSize,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

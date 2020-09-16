@@ -13,13 +13,12 @@ class HomeContent extends StatelessWidget {
     @required this.contentTranslate,
     @required this.buttonTranslate,
     @required this.imageAsset,
-    @required this.deviceSize,});
+    @required this.deviceSize,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: double.infinity,
       child: Column(
         children: [
           Image.asset(imageAsset),
@@ -59,6 +58,9 @@ class HomeContent extends StatelessWidget {
               borderRadius: BorderRadius.circular(0),
             ),
           ),
+          SizedBox(
+            height: deviceSize.height * 0.025,
+          )
         ],
       ),
     );
