@@ -1,7 +1,7 @@
 import 'package:admtm_app/widgets/home/InfotitleWidgets.dart';
 import 'package:admtm_app/widgets/home/appBar.dart';
 import 'package:admtm_app/widgets/home/bottom.dart';
-import 'package:admtm_app/widgets/home/drawer.dart';
+import 'package:admtm_app/shared/screens/drawer.dart';
 import 'package:admtm_app/widgets/home/findfacebook.dart';
 import 'package:admtm_app/widgets/home/info.dart';
 import 'package:admtm_app/widgets/home/one.dart';

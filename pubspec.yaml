@@ -64,6 +64,8 @@ flutter:
     - images/logo_adcmad.png
     - images/logo_ipdj.png
     - images/logo_sre.jpg
+    - images/portugal-flag.png
+    - images/uk-flag.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

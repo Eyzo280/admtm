@@ -1,3 +1,4 @@
+import 'package:admtm_app/screens/aboutUs.dart';
 import 'package:admtm_app/screens/home.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -28,10 +29,16 @@ class MyApp extends StatelessWidget {
           bodyText2: TextStyle(color: Colors.white),
         ),
       ),
+      initialRoute: '/',
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        '/': (context) => Home(),
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/AboutUS': (context) => AboutUS(),
+      },
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      home: Home(title: 'ADMTM App Home Page'),
     );
   }
 }

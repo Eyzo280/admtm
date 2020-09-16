@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
+enum Localization { english, portugal }
+
 class HomeDrawer extends StatelessWidget {
   final Size deviceSize;
 
   HomeDrawer({@required this.deviceSize});
+
+  void changeLocalization({
+    @required BuildContext ctx,
+    @required Localization localization,
+  }) {
+    if (localization == Localization.english) {
+      ctx.locale = Locale('en', 'US');
+    } else {
+      ctx.locale = Locale('pt', 'PT');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +37,38 @@ class HomeDrawer extends StatelessWidget {
               SizedBox(
                 height: deviceSize.height * 0.05,
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: () => changeLocalization(
+                        ctx: context, localization: Localization.portugal),
+                    child: Container(
+                      width: deviceSize.width * 0.1,
+                      child: Image.asset(
+                        'images/portugal-flag.png',
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: deviceSize.width * 0.05,
+                  ),
+                  InkWell(
+                    onTap: () => changeLocalization(
+                        ctx: context, localization: Localization.english),
+                    child: Container(
+                      width: deviceSize.width * 0.1,
+                      child: Image.asset(
+                        'images/uk-flag.png',
+                      ),
+                    ),
+                  ),
+                ],
+              ),
               ListTile(
                 title: Text('menu_value1').tr(),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.of(context).pushReplacementNamed('/');
                 },
               ),
               Padding(
@@ -40,8 +80,7 @@ class HomeDrawer extends StatelessWidget {
               ListTile(
                 title: Text('menu_value2').tr(),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.of(context).pushReplacementNamed('/AboutUS');
                 },
               ),
               Padding(
