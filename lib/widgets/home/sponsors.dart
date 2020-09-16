@@ -6,12 +6,14 @@ class HomeSponsors extends StatelessWidget {
   final String value2;
   final String value3;
   final String value4;
+  final Size deviceSize;
 
   HomeSponsors({
     this.value1,
     this.value2,
     this.value3,
     this.value4,
+    this.deviceSize
   });
 
   @override
@@ -39,7 +41,7 @@ class HomeSponsors extends StatelessWidget {
                 ),
           ).tr(),
           SizedBox(
-            height: 25,
+            height: deviceSize.height * 0.05,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

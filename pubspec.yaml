@@ -59,6 +59,11 @@ flutter:
     - images/admtm_xk35euui0a.jpg
     - images/admtm_x234dizoop.jpg
     - images/admtm_team02v2.jpg
+    - images/cm-funchal.png
+    - images/cm-cdlobos.png
+    - images/logo_adcmad.png
+    - images/logo_ipdj.png
+    - images/logo_sre.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

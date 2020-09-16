@@ -1,9 +1,12 @@
 import 'package:admtm_app/widgets/home/InfotitleWidgets.dart';
 import 'package:admtm_app/widgets/home/appBar.dart';
+import 'package:admtm_app/widgets/home/bottom.dart';
 import 'package:admtm_app/widgets/home/drawer.dart';
+import 'package:admtm_app/widgets/home/findfacebook.dart';
 import 'package:admtm_app/widgets/home/info.dart';
 import 'package:admtm_app/widgets/home/one.dart';
 import 'package:admtm_app/widgets/home/content.dart';
+import 'package:admtm_app/widgets/home/partners.dart';
 import 'package:admtm_app/widgets/home/sponsors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -137,6 +140,16 @@ class _HomeState extends State<Home> {
               value2: 'Home_sponsors_value2',
               value3: 'Home_sponsors_value3',
               value4: 'Home_sponsors_value4',
+              deviceSize: _deviceSize,
+            ),
+            HomeFindFacebook(
+              deviceSize: _deviceSize,
+            ),
+            HomePartners(
+              deviceSize: _deviceSize,
+            ),
+            HomeBottom(
+              deviceSize: _deviceSize,
             ),
           ],
         ),
