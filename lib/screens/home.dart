@@ -4,6 +4,7 @@ import 'package:admtm_app/widgets/home/drawer.dart';
 import 'package:admtm_app/widgets/home/info.dart';
 import 'package:admtm_app/widgets/home/one.dart';
 import 'package:admtm_app/widgets/home/content.dart';
+import 'package:admtm_app/widgets/home/sponsors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -130,6 +131,12 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
+            ),
+            HomeSponsors(
+              value1: 'Home_sponsors_value1',
+              value2: 'Home_sponsors_value2',
+              value3: 'Home_sponsors_value3',
+              value4: 'Home_sponsors_value4',
             ),
           ],
         ),
