@@ -26,7 +26,17 @@ class MyApp extends StatelessWidget {
         dividerColor: Color.fromRGBO(0, 0, 0, 0.5),
         textTheme: TextTheme(
           bodyText1: TextStyle(color: Colors.white),
-          bodyText2: TextStyle(color: Colors.white),
+          bodyText2: TextStyle(
+            color: Color.fromRGBO(46, 56, 66, 1),
+            fontSize: 20,
+            fontWeight: FontWeight.normal,
+          ),
+          headline1: TextStyle(
+            color: Color.fromRGBO(46, 56, 66, 1),
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+          ),
         ),
       ),
       initialRoute: '/',

@@ -20,7 +20,7 @@ class HomeFindFacebook extends StatelessWidget {
         children: [
           Text(
             'Home_findfacebook_value1',
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
+            style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
@@ -31,7 +31,7 @@ class HomeFindFacebook extends StatelessWidget {
           Text(
             'Home_findfacebook_value2',
             textAlign: TextAlign.justify,
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
+            style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontSize: 18,
                 ),
           ).tr(),
@@ -47,7 +47,7 @@ class HomeFindFacebook extends StatelessWidget {
             ),
             child: Text(
               'Home_findfacebook_value3',
-              style: Theme.of(context).textTheme.bodyText2,
+              style: Theme.of(context).textTheme.bodyText1,
             ).tr(),
           ),
         ],

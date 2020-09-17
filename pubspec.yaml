@@ -66,6 +66,11 @@ flutter:
     - images/logo_sre.jpg
     - images/portugal-flag.png
     - images/uk-flag.png
+    - images/admtm_logo.jpg
+    - images/logo_federation.jpg
+    - images/escola01.jpg
+    - images/escola02.jpg
+    - images/dft_logo_small.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

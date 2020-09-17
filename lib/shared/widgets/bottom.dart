@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class HomeBottom extends StatelessWidget {
+class ScreensBottom extends StatelessWidget {
   final Size deviceSize;
 
-  HomeBottom({this.deviceSize});
+  ScreensBottom({this.deviceSize});
 
   Color _content_color = Color.fromRGBO(255, 255, 255, 0.5);
 

@@ -3,10 +3,10 @@ import 'package:easy_localization/easy_localization.dart';
 
 enum Localization { english, portugal }
 
-class HomeDrawer extends StatelessWidget {
+class ScreensDrawer extends StatelessWidget {
   final Size deviceSize;
 
-  HomeDrawer({@required this.deviceSize});
+  ScreensDrawer({@required this.deviceSize});
 
   void changeLocalization({
     @required BuildContext ctx,

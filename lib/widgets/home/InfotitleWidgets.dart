@@ -20,7 +20,7 @@ class HomeInfoTitleWidgets extends StatelessWidget {
           title,
           style: Theme.of(context)
               .textTheme
-              .bodyText2
+              .bodyText1
               .copyWith(fontWeight: FontWeight.bold, fontSize: 25),
         ).tr(),
         SizedBox(
@@ -33,7 +33,7 @@ class HomeInfoTitleWidgets extends StatelessWidget {
         Text(
           content,
           textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.bodyText2.copyWith(
+          style: Theme.of(context).textTheme.bodyText1.copyWith(
                 color: Color.fromRGBO(255, 190, 190, 1),
                 fontSize: 20,
               ),

@@ -27,7 +27,7 @@ class HomeContent extends StatelessWidget {
           ),
           Text(
             titleTranslate,
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
+            style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
@@ -37,7 +37,7 @@ class HomeContent extends StatelessWidget {
             child: Text(
               contentTranslate,
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyText2.copyWith(
+              style: Theme.of(context).textTheme.bodyText1.copyWith(
                     fontSize: 15,
                   ),
             ).tr(),
@@ -49,7 +49,7 @@ class HomeContent extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 buttonTranslate,
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodyText1,
               ).tr(),
             ),
             shape: RoundedRectangleBorder(

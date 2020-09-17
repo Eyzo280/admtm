@@ -1,7 +1,7 @@
+import 'package:admtm_app/shared/widgets/drawer.dart';
 import 'package:admtm_app/widgets/home/InfotitleWidgets.dart';
 import 'package:admtm_app/widgets/home/appBar.dart';
-import 'package:admtm_app/widgets/home/bottom.dart';
-import 'package:admtm_app/shared/screens/drawer.dart';
+import 'package:admtm_app/shared/widgets/bottom.dart';
 import 'package:admtm_app/widgets/home/findfacebook.dart';
 import 'package:admtm_app/widgets/home/info.dart';
 import 'package:admtm_app/widgets/home/one.dart';
@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
     final _deviceSize = MediaQuery.of(context).size;
 
     return Scaffold(
-      drawer: HomeDrawer(
+      drawer: ScreensDrawer(
         deviceSize: _deviceSize,
       ),
       body: NestedScrollView(
@@ -157,7 +157,7 @@ class _HomeState extends State<Home> {
               ),
               Flexible(
                 fit: FlexFit.loose,
-                child: HomeBottom(
+                child: ScreensBottom(
                   deviceSize: _deviceSize,
                 ),
               ),
