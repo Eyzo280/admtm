@@ -1,3 +1,4 @@
+import 'package:admtm_app/screens/classes.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
@@ -92,8 +93,7 @@ class ScreensDrawer extends StatelessWidget {
               ListTile(
                 title: Text('menu_value3').tr(),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.of(context).pushReplacementNamed(Classes.routeName);
                 },
               ),
               Padding(

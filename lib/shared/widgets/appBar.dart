@@ -3,10 +3,12 @@ import 'package:easy_localization/easy_localization.dart';
 
 class ScreensAppBar extends StatefulWidget {
   final String appBarValue1;
+  final String appBarValue2;
   final Size deviceSize;
 
   ScreensAppBar({
     @required this.appBarValue1,
+    this.appBarValue2 = '',
     @required this.deviceSize,
   });
 
@@ -28,10 +30,17 @@ class _ScreensAppBarState extends State<ScreensAppBar>
       duration: Duration(seconds: 2),
     );
 
-    _animation = Tween(begin: 100.0, end: 150.0).animate(_animationController)
-      ..addListener(() {
-        setState(() {});
-      });
+    if (widget.appBarValue2 != '') {
+      _animation = Tween(begin: 150.0, end: 200.0).animate(_animationController)
+        ..addListener(() {
+          setState(() {});
+        });
+    } else {
+      _animation = Tween(begin: 100.0, end: 150.0).animate(_animationController)
+        ..addListener(() {
+          setState(() {});
+        });
+    }
 
     _animationController.forward();
 
@@ -47,6 +56,12 @@ class _ScreensAppBarState extends State<ScreensAppBar>
     });
 
     super.didChangeDependencies();
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -96,9 +111,33 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                           fontWeight: FontWeight.bold,
                         ),
                       ).tr(),
-                      SizedBox(
-                        height: _animation.value / 3,
-                      )
+                      widget.appBarValue2 != ''
+                          ? Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                SizedBox(
+                                  height: _animation.value / 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 24.0),
+                                  child: Text(
+                                    widget.appBarValue2,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 18.0,
+                                    ),
+                                  ).tr(),
+                                ),
+                                SizedBox(
+                                  height: _animation.value / 5,
+                                ),
+                              ],
+                            )
+                          : SizedBox(
+                              height: _animation.value / 3,
+                            ),
                     ],
                   ),
                 ),
