@@ -94,6 +94,8 @@ flutter:
     - images/classes/mtadv753op.jpg
     - images/classes/mtadvX66a6a.jpg
     - images/classes/mtadv223aj.jpg
+    - images/whatismt/whatismt01.jpg
+    - images/whatismt/whatismt02.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

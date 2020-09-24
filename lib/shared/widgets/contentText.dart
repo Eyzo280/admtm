@@ -6,6 +6,8 @@ class ContentText extends StatelessWidget {
 
   ContentText({@required this.value});
 
+  Color _content_color = Color.fromRGBO(0, 0, 0, 0.65);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,6 +18,7 @@ class ContentText extends StatelessWidget {
         Text(
           value,
           textAlign: TextAlign.justify,
+          style: TextStyle(color: _content_color),
         ).tr()
       ],
     );

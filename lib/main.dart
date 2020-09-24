@@ -1,6 +1,7 @@
 import 'package:admtm_app/screens/aboutUs.dart';
 import 'package:admtm_app/screens/classes.dart';
 import 'package:admtm_app/screens/home.dart';
+import 'package:admtm_app/screens/whatismt.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/AboutUS': (context) => AboutUS(),
         '/Classes': (context) => Classes(),
+        '/Whatismt': (context) => Whatismt(),
       },
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
