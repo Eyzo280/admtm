@@ -96,6 +96,20 @@ flutter:
     - images/classes/mtadv223aj.jpg
     - images/whatismt/whatismt01.jpg
     - images/whatismt/whatismt02.jpg
+    - images/fightteam/admtm_team01.jpg
+    - images/fightteam/jose_abreu.jpg
+    - images/fightteam/marisol_freitas.jpg
+    - images/fightteam/henrique_ponte.jpg
+    - images/fightteam/antonio_faria.jpg
+    - images/fightteam/fabio_pinto.jpg
+    - images/fightteam/marco_jardim.jpg
+    - images/fightteam/admtm_trainers.jpg
+    - images/fightteam/admtm_ft_x323aa.jpg
+    - images/fightteam/admtm_cert.jpg
+    - images/fightteam/admtm_team02v2.jpg
+    - images/fightteam/admtm_ft_xekmaicpo3.jpg
+    - images/fightteam/admtm_ft_x3la9claam.jpg
+    - images/fightteam/admtm_ft_x43laizzoa.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

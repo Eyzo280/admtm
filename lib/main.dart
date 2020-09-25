@@ -1,5 +1,6 @@
 import 'package:admtm_app/screens/aboutUs.dart';
 import 'package:admtm_app/screens/classes.dart';
+import 'package:admtm_app/screens/fightTeam.dart';
 import 'package:admtm_app/screens/home.dart';
 import 'package:admtm_app/screens/whatismt.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -27,7 +28,11 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         dividerColor: Color.fromRGBO(0, 0, 0, 0.5),
         textTheme: TextTheme(
-          bodyText1: TextStyle(color: Colors.white),
+          bodyText1: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
           bodyText2: TextStyle(
             color: Color.fromRGBO(46, 56, 66, 1),
             fontSize: 20,
@@ -49,6 +54,7 @@ class MyApp extends StatelessWidget {
         '/AboutUS': (context) => AboutUS(),
         '/Classes': (context) => Classes(),
         '/Whatismt': (context) => Whatismt(),
+        '/FightTeam': (context) => FightTeam(),
       },
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
