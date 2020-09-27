@@ -125,5 +125,20 @@
     "fightteam_content_fighter5_description": "I DAN KICKBOXING",
     "fightteam_content_fighter6_name": "MARCO JARDIM",
     "fightteam_content_fighter6_description": "DYNAMIC FIGHT TRAINING INSTRUCTOR",
-    "fightteam_content_value4": "MEET US AT THE GYM!"
+    "fightteam_content_value4": "MEET US AT THE GYM!",
+    "gymsandtrainingschedule_appbar_value1": "GYMS AND TRAINING SCHEDULE",
+    "gymsandtrainingschedule_appbar_value2": "CHECK OUR GYMS' LOCALIZATIONS AND THE UP-TO-DATE TRAINING SCHEDULE",
+    "gymsandtrainingschedule_menu_one": "Câmara de Lobos gym",
+    "gymsandtrainingschedule_menu_two": "Francisco Franco School Gym (Funchal)",
+    "gymsandtrainingschedule_menu_three": "Garouta do Calhau Gym – Courelas Santo António",
+    "gymsandtrainingschedule_Content.one_title": "CÂMARA DE LOBOS GYM",
+    "gymsandtrainingschedule_Content.one_value1": "Around ten minutes from Funchal, on the second exit to Câmara de Lobos from the fast lane, as if going to Continente Hypermarket, two minutes after exiting the fast lane. Parking is free and closed.",
+    "gymsandtrainingschedule_Content.one_value2": "The Gym is inside the Pavilhão Gimnodesportivo de Cãmara de Lobos complex, it has roughly 120m2, equipped with tatami floor, training ringue, ten punching bags of various sizes, weights and formats; Muay Thai pads, hand weights, elastics, ropes, medicinal balls among other appliances to work on maximum explosive strength and dynamics.",
+    "gymsandtrainingschedule_Content.one_value3": "The clubs’ head office is located in the gym, with a reception and small waiting room where parents can watch with delight their children train. On Mondays and Wednesdays one can use the running track and weight room (totally equipped with machines and weights) allowing muscle work to take place for those who want or need it.",
+    "gymsandtrainingschedule_Content.two_title": "FRANCISCO FRANCO SCHOOL GYM",
+    "gymsandtrainingschedule_Content.two_value1": "Located inside Secondary School Francisco Franco in Funchal city center, with possibility of closed parking, with a cost of 20€ per year.",
+    "gymsandtrainingschedule_Content.two_value2": "The practice room is divided in 60m2 with tatami floor and 80m2 wooden floor, bathrooms, four punching bags and weights, allowing muscle work to take place for those who want or need it.",
+    "gymsandtrainingschedule_Content.three_title": "GAROUTA DO CALHAU GYM – COURELAS SANTO ANTÓNIO",
+    "gymsandtrainingschedule_Content.three_value1": "Located in Courelas Peak (Pico das Courelas), around ten minutes from the fast lane, five minutes from Madeira Shopping Centre and two minutes from Santo António Church.",
+    "gymsandtrainingschedule_Content.three_value2": "It had an area of 100m2, with bathrooms, five boxing bags, elastic balls, weights, elastics among other training equipment."
 }

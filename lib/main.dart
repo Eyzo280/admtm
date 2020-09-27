@@ -1,6 +1,7 @@
 import 'package:admtm_app/screens/aboutUs.dart';
 import 'package:admtm_app/screens/classes.dart';
 import 'package:admtm_app/screens/fightTeam.dart';
+import 'package:admtm_app/screens/gymsandtrainingschedule.dart';
 import 'package:admtm_app/screens/home.dart';
 import 'package:admtm_app/screens/whatismt.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -30,17 +31,17 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           bodyText1: TextStyle(
             color: Colors.white,
-            fontSize: 20,
+            fontSize: 13,
             fontWeight: FontWeight.bold,
           ),
           bodyText2: TextStyle(
             color: Color.fromRGBO(46, 56, 66, 1),
-            fontSize: 20,
+            fontSize: 13,
             fontWeight: FontWeight.normal,
           ),
           headline1: TextStyle(
             color: Color.fromRGBO(46, 56, 66, 1),
-            fontSize: 20,
+            fontSize: 13,
             fontWeight: FontWeight.bold,
             letterSpacing: 3,
           ),
@@ -55,6 +56,7 @@ class MyApp extends StatelessWidget {
         '/Classes': (context) => Classes(),
         '/Whatismt': (context) => Whatismt(),
         '/FightTeam': (context) => FightTeam(),
+        '/GymsAndTrainingSchedule': (context) => GymsAndTrainingSchedule(),
       },
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

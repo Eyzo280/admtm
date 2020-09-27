@@ -1,5 +1,6 @@
 import 'package:admtm_app/screens/classes.dart';
 import 'package:admtm_app/screens/fightTeam.dart';
+import 'package:admtm_app/screens/gymsandtrainingschedule.dart';
 import 'package:admtm_app/screens/whatismt.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -38,7 +39,7 @@ class ScreensDrawer extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: <Widget>[
               SizedBox(
-                height: deviceSize.height * 0.05,
+                height: deviceSize.height * 0.075,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -133,8 +134,8 @@ class ScreensDrawer extends StatelessWidget {
               ListTile(
                 title: Text('menu_value6').tr(),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.of(context)
+                      .pushReplacementNamed(GymsAndTrainingSchedule.routeName);
                 },
               ),
               Padding(

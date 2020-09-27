@@ -125,5 +125,20 @@
     "fightteam_content_fighter5_description": "I DAN KICKBOXING",
     "fightteam_content_fighter6_name": "MARCO JARDIM",
     "fightteam_content_fighter6_description": "DYNAMIC FIGHT TRAINING INSTRUCTOR",
-    "fightteam_content_value4": "MEET US AT THE GYM!"
+    "fightteam_content_value4": "MEET US AT THE GYM!",
+    "gymsandtrainingschedule_appbar_value1": "GINÁSIOS E HORÁRIOS",
+    "gymsandtrainingschedule_appbar_value2": "VENHA CONHECER OS NOSSOS CENTROS DE TREINO E HORÁRIOS",
+    "gymsandtrainingschedule_menu_one": "Ginásio de Câmara de Lobos",
+    "gymsandtrainingschedule_menu_two": "Ginásio Escola Francisco Franco (Funchal)",
+    "gymsandtrainingschedule_menu_three": "Ginásio Garouta do Calhau – Courelas Santo António",
+    "gymsandtrainingschedule_Content.one_title": "Ginásio de Câmara de Lobos",
+    "gymsandtrainingschedule_Content.one_value1": "A cerca de dez minutos do Funchal, na segunda saída da via rápida de Câmara de Lobos em direção ao Hipermercado Continente, a dois minutos da saída da via rápida e com estacionamento gratuito e coberto.",
+    "gymsandtrainingschedule_Content.one_value2": "A sala de treino situa-se no Pavilhão Gimnodesportivo de Camara de Lobos, tem cerca de 120m2, totalmente em piso de tatami, ringue de treino, dez sacos de vários tamanhos, pesos e formatos. ",
+    "gymsandtrainingschedule_Content.one_value3": "Para além do equipamento de Muay Thai (Pads) o ginásio está equipado com vários pesos de mãos, elásticos, cordas, bolas medicinais, entre muitos outros aparelhos essenciais para trabalhar força máxima, explosiva e dinâmica. Uma vez que esta é a sede do Clube, possui uma receção com pequena sala de espera, onde os pais podem deliciar-se a ver os treinos dos seus filhos. Às segundas e quartas-feiras poderá frequentar a pista de atletismo e sala de musculação (totalmente equipada com máquinas e pesos) permitindo assim um trabalho de hipertrofia muscular, para quem o desejar ou necessitar.",
+    "gymsandtrainingschedule_Content.two_title": "Ginásio Escola Francisco Franco",
+    "gymsandtrainingschedule_Content.two_value1": "Situa-se no interior da Escola Secundária Francisco Franco, Centro do Funchal, possibilidade de estacionamento coberto, com um custo de 20€ por ano. Sala com 60m2 de tatami e 80m2 de piso em madeira, balneários, possui 4 sacos, elásticos, pesos entre muitos outros aparelhos.",
+    "gymsandtrainingschedule_Content.two_value2": "As terças e quintas, pode frequentar a sala de musculação, totalmente equipada com máquinas e pesos, permitindo assim um trabalho de hipertrofia muscular, para quem o desejar ou necessitar.",
+    "gymsandtrainingschedule_Content.three_title": "Ginásio Garouta do Calhau – Courelas Santo António",
+    "gymsandtrainingschedule_Content.three_value1": "Situa-se no Pico das Courelas, a dez minutos da via rápida, cinco minutos do Centro Comercial Madeira Shopping e a dois minutos da Igreja de Santo António.",
+    "gymsandtrainingschedule_Content.three_value2": "Possui uma área de 100m2, com balneários, 5 sacos de boxe, bolas elásticas, pesos, elásticos, entre outro equipamento."
 }

@@ -30,17 +30,10 @@ class _ScreensAppBarState extends State<ScreensAppBar>
       duration: Duration(seconds: 2),
     );
 
-    if (widget.appBarValue2 != '') {
-      _animation = Tween(begin: 150.0, end: 200.0).animate(_animationController)
-        ..addListener(() {
-          setState(() {});
-        });
-    } else {
-      _animation = Tween(begin: 100.0, end: 150.0).animate(_animationController)
-        ..addListener(() {
-          setState(() {});
-        });
-    }
+    _animation = Tween(begin: 100.0, end: 150.0).animate(_animationController)
+      ..addListener(() {
+        setState(() {});
+      });
 
     _animationController.forward();
 
@@ -107,7 +100,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                         widget.appBarValue1,
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 25.0,
+                          fontSize: 19.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ).tr(),
@@ -126,7 +119,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 18.0,
+                                      fontSize: 13.0,
                                     ),
                                   ).tr(),
                                 ),

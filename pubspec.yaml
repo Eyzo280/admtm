@@ -26,6 +26,7 @@ dependencies:
 
   easy_localization: ^2.3.3
   font_awesome_flutter: ^8.8.1
+  carousel_slider: ^2.3.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -110,6 +111,12 @@ flutter:
     - images/fightteam/admtm_ft_xekmaicpo3.jpg
     - images/fightteam/admtm_ft_x3la9claam.jpg
     - images/fightteam/admtm_ft_x43laizzoa.jpg
+    - images/gym001.jpg
+    - images/gym002.jpg
+    - images/gym003.jpg
+    - images/gym004.jpg
+    - images/gym005.jpg
+    - images/gym006.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
