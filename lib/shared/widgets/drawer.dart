@@ -1,6 +1,7 @@
 import 'package:admtm_app/screens/classes.dart';
 import 'package:admtm_app/screens/fightTeam.dart';
 import 'package:admtm_app/screens/gymsandtrainingschedule.dart';
+import 'package:admtm_app/screens/news.dart';
 import 'package:admtm_app/screens/whatismt.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -147,8 +148,7 @@ class ScreensDrawer extends StatelessWidget {
               ListTile(
                 title: Text('menu_value7').tr(),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.of(context).pushReplacementNamed(News.routeName);
                 },
               ),
               Padding(

@@ -3,6 +3,7 @@ import 'package:admtm_app/screens/classes.dart';
 import 'package:admtm_app/screens/fightTeam.dart';
 import 'package:admtm_app/screens/gymsandtrainingschedule.dart';
 import 'package:admtm_app/screens/home.dart';
+import 'package:admtm_app/screens/news.dart';
 import 'package:admtm_app/screens/whatismt.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
           ),
           headline1: TextStyle(
             color: Color.fromRGBO(46, 56, 66, 1),
-            fontSize: 13,
+            fontSize: 15,
             fontWeight: FontWeight.bold,
             letterSpacing: 3,
           ),
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
         '/Whatismt': (context) => Whatismt(),
         '/FightTeam': (context) => FightTeam(),
         '/GymsAndTrainingSchedule': (context) => GymsAndTrainingSchedule(),
+        '/News': (context) => News(),
       },
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

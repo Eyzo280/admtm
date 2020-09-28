@@ -30,7 +30,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
       duration: Duration(seconds: 2),
     );
 
-    _animation = Tween(begin: 100.0, end: 150.0).animate(_animationController)
+    _animation = Tween(begin: 125.0, end: 175.0).animate(_animationController)
       ..addListener(() {
         setState(() {});
       });
@@ -120,11 +120,12 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 13.0,
+                                      letterSpacing: 5,
                                     ),
                                   ).tr(),
                                 ),
                                 SizedBox(
-                                  height: _animation.value / 5,
+                                  height: _animation.value / 8,
                                 ),
                               ],
                             )
