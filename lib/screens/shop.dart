@@ -1,4 +1,5 @@
 import 'package:admtm_app/shared/widgets/appBar.dart';
+import 'package:admtm_app/shared/widgets/bottom.dart';
 import 'package:admtm_app/shared/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -89,6 +90,12 @@ class Shop extends StatelessWidget {
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.025,
+                ),
+                Container(
+                  color: Theme.of(context).canvasColor,
+                  child: ScreensBottom(
+                    deviceSize: _deviceSize,
+                  ),
                 ),
               ],
             ),

@@ -142,6 +142,36 @@ flutter:
     - images/shop/shop-sweatpants02.jpg
     - images/shop/shop-t-shirt01.jpg
     - images/shop/shop-t-shirt02.jpg
+    - images/sponsors/aquimadeira.jpg
+    - images/sponsors/class_house.jpg
+    - images/sponsors/logo_4litro.png
+    - images/sponsors/logo_ad_automoveis.jpg
+    - images/sponsors/logo_alberto_oculista.jpg
+    - images/sponsors/logo_atms.png
+    - images/sponsors/logo_auto_piornais.png
+    - images/sponsors/logo_beach_bar.jpg
+    - images/sponsors/logo_bordados_pontg.png
+    - images/sponsors/logo_carbonara.jpg
+    - images/sponsors/logo_cidade_velha.png
+    - images/sponsors/logo_cme.png
+    - images/sponsors/logo_dubai.png
+    - images/sponsors/logo_eoccu.jpg
+    - images/sponsors/logo_green_devis_safari.png
+    - images/sponsors/logo_hotel_eira_do_serrado_ans_spa.png
+    - images/sponsors/logo_luminoso_rainha.jpg
+    - images/sponsors/logo_mimos.jpg
+    - images/sponsors/logo_miro_freitas.jpg
+    - images/sponsors/logo_muscle_power.png
+    - images/sponsors/logo_nico_burger.jpg
+    - images/sponsors/logo_ocean_gardens_hotel.png
+    - images/sponsors/logo_old_town_bar.jpg
+    - images/sponsors/logo_pdf-convert.png
+    - images/sponsors/logo_podio_classico.jpg
+    - images/sponsors/logo_prova_la_pasta.jpg
+    - images/sponsors/logo_rui_bombas.jpg
+    - images/sponsors/logo_snack_bar.jpg
+    - images/sponsors/logo_super_lobos.jpg
+    - images/sponsors/logo_tipografia_natividade.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
