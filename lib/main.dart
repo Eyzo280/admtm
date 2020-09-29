@@ -4,6 +4,7 @@ import 'package:admtm_app/screens/fightTeam.dart';
 import 'package:admtm_app/screens/gymsandtrainingschedule.dart';
 import 'package:admtm_app/screens/home.dart';
 import 'package:admtm_app/screens/news.dart';
+import 'package:admtm_app/screens/shop.dart';
 import 'package:admtm_app/screens/whatismt.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -59,6 +60,7 @@ class MyApp extends StatelessWidget {
         '/FightTeam': (context) => FightTeam(),
         '/GymsAndTrainingSchedule': (context) => GymsAndTrainingSchedule(),
         '/News': (context) => News(),
+        '/Shop': (context) => Shop(),
       },
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

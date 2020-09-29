@@ -119,6 +119,29 @@ flutter:
     - images/gym006.jpg
     - images/news/fbpage.jpg
     - images/news/ytpage.jpg
+    - images/shop/shop-ankle-guards01.jpg
+    - images/shop/shop-blouse01.jpg
+    - images/shop/shop-cup01.jpg
+    - images/shop/shop-gloves01.jpg
+    - images/shop/shop-groin-guard01.jpg
+    - images/shop/shop-guards01.jpg
+    - images/shop/shop-hand-wraps01.jpg
+    - images/shop/shop-hoodie01.jpg
+    - images/shop/shop-hoodie02.jpg
+    - images/shop/shop-jumping-rope01.jpg
+    - images/shop/shop-knee-guards01.jpg
+    - images/shop/shop-mouth-guard01.jpg
+    - images/shop/shop-mt-cream01.jpg
+    - images/shop/shop-mt01.jpg
+    - images/shop/shop-mt02.jpg
+    - images/shop/shop-punching-bag01.jpg
+    - images/shop/shop-punching-bag02.jpg
+    - images/shop/shop-shin-guards01.jpg
+    - images/shop/shop-shorts01.jpg
+    - images/shop/shop-sweatpants01.jpg
+    - images/shop/shop-sweatpants02.jpg
+    - images/shop/shop-t-shirt01.jpg
+    - images/shop/shop-t-shirt02.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
