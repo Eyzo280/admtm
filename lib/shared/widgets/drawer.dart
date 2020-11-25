@@ -184,10 +184,13 @@ class ScreensDrawer extends StatelessWidget {
                   height: 0,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset('images/logo_admtm_white.png'),
-              )
+              Container(
+                padding: const EdgeInsets.all(18),
+                height: MediaQuery.of(context).size.width * 0.5,
+                child: Image.asset(
+                  'images/logo_admtm_white.png',
+                ),
+              ),
             ],
           ),
         ),

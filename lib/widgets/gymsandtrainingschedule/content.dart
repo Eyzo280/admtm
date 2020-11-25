@@ -17,13 +17,13 @@ class GymsAndTrainingContent extends StatelessWidget {
   });
 
   // List contentOneImages
-  final List contentOneImages = [
+  final contentOneImages = <String>[
     'gym001',
     'gym002',
     'gym003',
   ];
 
-  final List contentTwoImages = [
+  final contentTwoImages = <String>[
     'gym004',
     'gym005',
     'gym006',
@@ -41,12 +41,12 @@ class GymsAndTrainingContent extends StatelessWidget {
               autoPlay: true,
               enlargeCenterPage: true,
             ),
-            items: contentOneImages.map((image) {
+            items: contentOneImages.map((String image) {
               return Builder(
                 builder: (BuildContext context) {
                   return Container(
                     width: MediaQuery.of(context).size.width,
-                    margin: EdgeInsets.symmetric(horizontal: 5.0),
+                    margin: const EdgeInsets.symmetric(horizontal: 5.0),
                     child: Image.asset(
                       'images/gymsandtrainingschedule/$image.jpg',
                       fit: BoxFit.cover,
@@ -79,7 +79,7 @@ class GymsAndTrainingContent extends StatelessWidget {
         ),
         Container(
           height: 150,
-          child: Center(
+          child: const Center(
             child: Text('Map'),
           ),
         ),
@@ -102,12 +102,12 @@ class GymsAndTrainingContent extends StatelessWidget {
               autoPlay: true,
               enlargeCenterPage: true,
             ),
-            items: contentTwoImages.map((image) {
+            items: contentTwoImages.map((String image) {
               return Builder(
                 builder: (BuildContext context) {
                   return Container(
                     width: MediaQuery.of(context).size.width,
-                    margin: EdgeInsets.symmetric(horizontal: 5.0),
+                    margin: const EdgeInsets.symmetric(horizontal: 5.0),
                     child: Image.asset(
                       'images/gymsandtrainingschedule/$image.jpg',
                       fit: BoxFit.cover,
@@ -137,7 +137,7 @@ class GymsAndTrainingContent extends StatelessWidget {
         ),
         Container(
           height: 150,
-          child: Center(
+          child: const Center(
             child: Text('Map'),
           ),
         ),
@@ -168,7 +168,7 @@ class GymsAndTrainingContent extends StatelessWidget {
         ),
         Container(
           height: 150,
-          child: Center(
+          child: const Center(
             child: Text('Map'),
           ),
         ),

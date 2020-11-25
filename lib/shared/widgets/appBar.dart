@@ -6,7 +6,7 @@ class ScreensAppBar extends StatefulWidget {
   final String appBarValue2;
   final Size deviceSize;
 
-  ScreensAppBar({
+  const ScreensAppBar({
     @required this.appBarValue1,
     this.appBarValue2 = '',
     @required this.deviceSize,
@@ -27,7 +27,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
   void initState() {
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 2),
+      duration: const Duration(seconds: 2),
     );
 
     _animation = Tween(begin: 125.0, end: 175.0).animate(_animationController)
@@ -42,7 +42,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
 
   @override
   void didChangeDependencies() {
-    Future.delayed(Duration.zero).whenComplete(() {
+    Future<dynamic>.delayed(Duration.zero).whenComplete(() {
       setState(() {
         _animations = !_animations;
       });
@@ -60,23 +60,23 @@ class _ScreensAppBarState extends State<ScreensAppBar>
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      expandedHeight: _animation.value,
+      expandedHeight: _animation.value as double,
       floating: false,
       pinned: true,
       title: AnimatedOpacity(
-        duration: Duration(milliseconds: 1500),
+        duration: const Duration(milliseconds: 1500),
         curve: Curves.easeIn,
         opacity: _animations ? 0 : 1,
-        child: Text('ADMTM'),
+        child: const Text('ADMTM'),
       ),
       centerTitle: true,
       backgroundColor: Colors.transparent,
       flexibleSpace: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
-                image: ExactAssetImage("images/admtm001.jpg"),
+                image: ExactAssetImage('images/admtm001.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -86,11 +86,11 @@ class _ScreensAppBarState extends State<ScreensAppBar>
               fit: StackFit.expand,
               children: [
                 Image.asset(
-                  "images/admtm001.jpg",
+                  'images/admtm001.jpg',
                   fit: BoxFit.cover,
                 ),
                 AnimatedOpacity(
-                  duration: Duration(milliseconds: 1500),
+                  duration: const Duration(milliseconds: 1500),
                   curve: Curves.easeIn,
                   opacity: _animations ? 0 : 1,
                   child: Column(
@@ -109,7 +109,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 SizedBox(
-                                  height: _animation.value / 10,
+                                  height: (_animation.value as double) / 10,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(
@@ -117,7 +117,7 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                                   child: Text(
                                     widget.appBarValue2,
                                     textAlign: TextAlign.center,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.white,
                                       fontSize: 13.0,
                                       letterSpacing: 5,
@@ -125,12 +125,12 @@ class _ScreensAppBarState extends State<ScreensAppBar>
                                   ).tr(),
                                 ),
                                 SizedBox(
-                                  height: _animation.value / 8,
+                                  height: (_animation.value as double) / 8,
                                 ),
                               ],
                             )
                           : SizedBox(
-                              height: _animation.value / 3,
+                              height: (_animation.value as double) / 3,
                             ),
                     ],
                   ),
