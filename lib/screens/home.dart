@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatefulWidget {
-  Home({Key key, this.title}) : super(key: key);
+  const Home({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -88,8 +88,8 @@ class _HomeState extends State<Home> {
               Flexible(
                 fit: FlexFit.loose,
                 child: Container(
-                  color: Color.fromRGBO(173, 49, 52, 1),
-                  padding: EdgeInsets.all(24),
+                  color: const Color.fromRGBO(173, 49, 52, 1),
+                  padding: const EdgeInsets.all(24),
                   child: Column(
                     children: [
                       HomeInfoTitleWidgets(
