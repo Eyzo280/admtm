@@ -1,3 +1,4 @@
+import 'package:admtm_app/screens/aboutUs.dart';
 import 'package:admtm_app/screens/classes.dart';
 import 'package:admtm_app/screens/fightTeam.dart';
 import 'package:admtm_app/screens/gymsandtrainingschedule.dart';
@@ -13,17 +14,42 @@ enum Localization { english, portugal }
 class ScreensDrawer extends StatelessWidget {
   final Size deviceSize;
 
-  ScreensDrawer({@required this.deviceSize});
+  const ScreensDrawer({@required this.deviceSize});
 
   void changeLocalization({
     @required BuildContext ctx,
     @required Localization localization,
   }) {
     if (localization == Localization.english) {
-      ctx.locale = Locale('en', 'US');
+      ctx.locale = const Locale('en', 'US');
     } else {
-      ctx.locale = Locale('pt', 'PT');
+      ctx.locale = const Locale('pt', 'PT');
     }
+  }
+
+  Widget _field({
+    @required BuildContext ctx,
+    @required String title,
+    @required String navigatorNamed,
+  }) {
+    return Column(
+      children: [
+        ListTile(
+          title: Text(
+            title.tr().toUpperCase(),
+          ),
+          onTap: () {
+            Navigator.of(ctx).pushReplacementNamed(navigatorNamed);
+          },
+        ),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          child: Divider(
+            height: 0,
+          ),
+        ),
+      ],
+    );
   }
 
   @override
@@ -36,7 +62,7 @@ class ScreensDrawer extends StatelessWidget {
         // through the options in the drawer if there isn't enough vertical
         // space to fit everything.
         child: Container(
-          color: Color.fromRGBO(167, 21, 21, 0.81),
+          color: const Color.fromRGBO(167, 21, 21, 0.81),
           child: ListView(
             // Important: Remove any padding from the ListView.
             padding: EdgeInsets.zero,
@@ -72,122 +98,58 @@ class ScreensDrawer extends StatelessWidget {
                   ),
                 ],
               ),
-              ListTile(
-                title: Text('menu_value1').tr(),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/');
-                },
+              _field(
+                ctx: context,
+                title: 'menu_value1',
+                navigatorNamed: '/',
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
+              _field(
+                ctx: context,
+                title: 'menu_value2',
+                navigatorNamed: AboutUS.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value3',
+                navigatorNamed: Classes.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value4',
+                navigatorNamed: Whatismt.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value5',
+                navigatorNamed: FightTeam.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value6',
+                navigatorNamed: GymsAndTrainingSchedule.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value7',
+                navigatorNamed: News.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value8',
+                navigatorNamed: Shop.routeName,
+              ),
+              _field(
+                ctx: context,
+                title: 'menu_value9',
+                navigatorNamed: Sponsors.routeName,
+              ),
+              Container(
+                padding: const EdgeInsets.all(18),
+                height: MediaQuery.of(context).size.width * 0.5,
+                child: Image.asset(
+                  'images/logo_admtm_white.png',
                 ),
               ),
-              ListTile(
-                title: Text('menu_value2').tr(),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/AboutUS');
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value3').tr(),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed(Classes.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value4').tr(),
-                onTap: () {
-                  Navigator.of(context)
-                      .pushReplacementNamed(Whatismt.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value5').tr(),
-                onTap: () {
-                  Navigator.of(context)
-                      .pushReplacementNamed(FightTeam.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value6').tr(),
-                onTap: () {
-                  Navigator.of(context)
-                      .pushReplacementNamed(GymsAndTrainingSchedule.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value7').tr(),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed(News.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value8').tr(),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed(Shop.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              ListTile(
-                title: Text('menu_value9').tr(),
-                onTap: () {
-                  Navigator.of(context)
-                      .pushReplacementNamed(Sponsors.routeName);
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Divider(
-                  height: 0,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset('images/logo_admtm_white.png'),
-              )
             ],
           ),
         ),

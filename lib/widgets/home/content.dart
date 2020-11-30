@@ -8,7 +8,7 @@ class HomeContent extends StatelessWidget {
   final String imageAsset;
   final Size deviceSize;
 
-  HomeContent({
+  const HomeContent({
     @required this.titleTranslate,
     @required this.contentTranslate,
     @required this.buttonTranslate,
@@ -48,9 +48,9 @@ class HomeContent extends StatelessWidget {
             child: FlatButton(
               onPressed: () {},
               child: Text(
-                buttonTranslate,
+                buttonTranslate.tr().toUpperCase(),
                 style: Theme.of(context).textTheme.bodyText1,
-              ).tr(),
+              ),
             ),
             shape: RoundedRectangleBorder(
               side: BorderSide(

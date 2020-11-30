@@ -13,10 +13,11 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     EasyLocalization(
-        supportedLocales: [Locale('en', 'US'), Locale('pt', 'PT')],
-        path: 'lang', // <-- change patch to your
-        fallbackLocale: Locale('en', 'US'),
-        child: MyApp()),
+      supportedLocales: const [Locale('en', 'US'), Locale('pt', 'PT')],
+      path: 'lang', // <-- change patch to your
+      fallbackLocale: const Locale('en', 'US'),
+      child: MyApp(),
+    ),
   );
 }
 
@@ -27,11 +28,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ADMTM App',
       theme: ThemeData(
-        canvasColor: Color.fromRGBO(29, 36, 42, 1),
+        canvasColor: const Color.fromRGBO(29, 36, 42, 1),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        dividerColor: Color.fromRGBO(0, 0, 0, 0.5),
-        textTheme: TextTheme(
+        dividerColor: const Color.fromRGBO(0, 0, 0, 0.5),
+        textTheme: const TextTheme(
           bodyText1: TextStyle(
             color: Colors.white,
             fontSize: 13,

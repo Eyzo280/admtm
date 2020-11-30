@@ -8,7 +8,7 @@ class HomeInfo extends StatelessWidget {
   final IconData icon;
   final Size deviceSize;
 
-  HomeInfo({
+  const HomeInfo({
     @required this.title,
     @required this.content,
     @required this.icon,
@@ -21,7 +21,7 @@ class HomeInfo extends StatelessWidget {
       children: [
         Icon(
           icon,
-          size: 50,
+          size: 35,
           color: Theme.of(context).textTheme.bodyText1.color,
         ),
         SizedBox(
@@ -31,7 +31,7 @@ class HomeInfo extends StatelessWidget {
           title,
           style: Theme.of(context).textTheme.bodyText1.copyWith(
                 fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 18,
               ),
         ).tr(),
         SizedBox(
@@ -41,7 +41,7 @@ class HomeInfo extends StatelessWidget {
           content,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyText1.copyWith(
-                fontSize: 20,
+                fontSize: 18,
               ),
         ).tr(),
         SizedBox(
@@ -57,14 +57,15 @@ class HomeInfo extends StatelessWidget {
                       Icon(
                         FontAwesomeIcons.phone,
                         color: Theme.of(context).textTheme.bodyText1.color,
+                        size: 18,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         'HomeInfo_Four_content_value2',
                         style: Theme.of(context).textTheme.bodyText1.copyWith(
-                              fontSize: 20,
+                              fontSize: 18,
                             ),
                       ).tr(),
                     ],
@@ -78,14 +79,15 @@ class HomeInfo extends StatelessWidget {
                       Icon(
                         FontAwesomeIcons.envelope,
                         color: Theme.of(context).textTheme.bodyText1.color,
+                        size: 18,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         'HomeInfo_Four_content_value3',
                         style: Theme.of(context).textTheme.bodyText1.copyWith(
-                              fontSize: 20,
+                              fontSize: 18,
                             ),
                       ).tr(),
                     ],
@@ -99,15 +101,16 @@ class HomeInfo extends StatelessWidget {
                       Icon(
                         FontAwesomeIcons.mapMarkerAlt,
                         color: Theme.of(context).textTheme.bodyText1.color,
+                        size: 18,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Expanded(
                         child: Text(
                           'HomeInfo_Four_content_value4',
                           style: Theme.of(context).textTheme.bodyText1.copyWith(
-                                fontSize: 20,
+                                fontSize: 18,
                               ),
                         ).tr(),
                       ),
@@ -117,7 +120,7 @@ class HomeInfo extends StatelessWidget {
               )
             : Column(
                 children: [
-                  Divider(),
+                  const Divider(),
                   SizedBox(
                     height: deviceSize.height * 0.025,
                   )

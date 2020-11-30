@@ -4,15 +4,15 @@ import 'package:easy_localization/easy_localization.dart';
 class HomeFindFacebook extends StatelessWidget {
   final Size deviceSize;
 
-  HomeFindFacebook({this.deviceSize});
+  const HomeFindFacebook({this.deviceSize});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        image: new DecorationImage(
-          image: new ExactAssetImage('images/admtm001.jpg'),
+      padding: const EdgeInsets.all(24),
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: ExactAssetImage('images/admtm001.jpg'),
           fit: BoxFit.cover,
         ),
       ),
@@ -30,7 +30,7 @@ class HomeFindFacebook extends StatelessWidget {
           ),
           Text(
             'Home_findfacebook_value2',
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyText1.copyWith(
                   fontSize: 18,
                 ),
@@ -41,7 +41,7 @@ class HomeFindFacebook extends StatelessWidget {
           FlatButton(
             onPressed: () {},
             shape: RoundedRectangleBorder(
-              side: BorderSide(
+              side: const BorderSide(
                   color: Colors.white, width: 2, style: BorderStyle.solid),
               borderRadius: BorderRadius.circular(0),
             ),

@@ -23,7 +23,7 @@ class _ClassesState extends State<Classes> {
 
   bool _visible = true;
 
-  int _timeAnimationContent = 500;
+  final int _timeAnimationContent = 500;
   //
 
   void changeView({Content contnet}) {
@@ -33,7 +33,7 @@ class _ClassesState extends State<Classes> {
     if (_viewContent != _selectedContent) {
       // When user selected another content then is animation
       _visible = false;
-      Future.delayed(Duration(milliseconds: _timeAnimationContent))
+      Future<dynamic>.delayed(Duration(milliseconds: _timeAnimationContent))
           .whenComplete(() {
         setState(() {
           _viewContent = _selectedContent;
@@ -77,8 +77,8 @@ class _ClassesState extends State<Classes> {
                   height: MediaQuery.of(context).size.height * 0.025,
                 ),
                 const Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                  child: const Divider(),
+                  padding: EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Divider(),
                 ),
                 AnimatedOpacity(
                   duration: Duration(milliseconds: _timeAnimationContent),

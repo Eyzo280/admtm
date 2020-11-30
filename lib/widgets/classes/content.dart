@@ -9,7 +9,7 @@ class ClassesContent extends StatelessWidget {
   ClassesContent({this.selectedContent});
 
   // List contentOneImages
-  List contentOneImages = [
+  final contentOneImages = <String>[
     'mtkidsXace0z',
     'mtkidsXdfa8a',
     'mtkidsX7bbah',
@@ -23,7 +23,7 @@ class ClassesContent extends StatelessWidget {
     'mtkidsX77awf',
   ];
 
-  List contentTwoImages = [
+  final contentTwoImages = <String>[
     'mtbegX99afd',
     'mtbegX77ada',
     'mtbegX64ajd',
@@ -33,7 +33,7 @@ class ClassesContent extends StatelessWidget {
     'mtbegX77afo',
   ];
 
-  List contentThreeImages = [
+  final contentThreeImages = <String>[
     'mtadvX99aad',
     'mtadvX7acdd',
     'mtadv753op',
